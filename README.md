@@ -1,3 +1,6 @@
+NAME: VIJAYAKUMAR S
+
+REG NO: 212224040359
 #  Mean and variance of a discrete  distribution
 
 
@@ -48,10 +51,39 @@ It shows the distance of a random variable from its mean. It is calcualted as
 ![image](https://user-images.githubusercontent.com/103921593/229993174-5b67e57e-3e01-4ac4-9f83-410a932b22bf.png)
 
 # Program :
-
+```
+NAME: VIJAYAKUMAR S
+REG NO: 212224040359
+```
+```
+# import numpy as np
+L = [int(i) for i in input().split()]
+E = len(L); O = max(L)
+x = list();f=list()
+for i in range (O+1):
+    c = 0
+    for j in range(E):
+        if L[j] == i:
+            c=c+1
+    f.append(c)
+    x.append(i)
+sf = np.sum(f)
+p = list()
+for i in range(O + 1):
+    p.append(f[i]/sf)
+mean = np.inner(x,p)
+EX2 = np.inner(np.square(x),p)
+var = EX2 - mean**2
+SD = np.sqrt(var)
+print("The mean arrival rate is %.3f "%mean)
+print("The Variance of arrival from freeder is %.3f "%var)
+print("The Standard deviation of arrival from freeder is %.3f"%SD)
+```
 
 
 # Output : 
+
+![Screenshot 2025-05-02 140157](https://github.com/user-attachments/assets/f9e7de07-788c-4265-b9c8-fa3c7ef61eb5)
 
 # Results :
 The mean and variance of arrivals of objects from feeder using probability distribution are calculated.
