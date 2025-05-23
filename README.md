@@ -1,8 +1,7 @@
-NAME: VIJAYAKUMAR S
 
-REG NO: 212224040359
 #  Mean and variance of a discrete  distribution
-
+# NAME: VIJAYAKUMAR S
+# REG NO: 212224040359
 
 # Aim : 
 
